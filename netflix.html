@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Homepage</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            color: #fff;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #141414;
+        }
+
+        .logo img {
+            width: 100px;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .profile img {
+            width: 35px;
+            border-radius: 5px;
+        }
+
+        .banner {
+            background: url('https://assets.nflxext.com/ffe/siteui/vlv3/9c7a1423-17a5-4d26-a2b8-10025a5c7df2/009b515e-fbd7-481d-9e42-cfd2d785b51b/IN-en-20230605-popsignuptwoweeks-perspective_alpha_website_large.jpg') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .banner-content {
+            max-width: 600px;
+        }
+
+        .banner h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .banner p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            display: flex;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .input-group input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+        }
+
+        .input-group button {
+            padding: 10px;
+            background-color: #e50914;
+            color: white;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+
+        .input-group button:hover {
+            background-color: #f40612;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .content h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .grid {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #333;
+            border-radius: 4px;
+            overflow: hidden;
+            width: calc(33.333% - 10px);
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #141414;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">New & Popular</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </nav>
+        <div class="profile">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="Profile">
+        </div>
+    </header>
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Watch Unlimited Movies, TV Shows, and More.</h1>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="input-group">
+                <input type="email" placeholder="Email address">
+                <button>Get Started</button>
+            </div>
+        </div>
+    </section>
+    <section class="content">
+        <h2>Popular on Netflix</h2>
+        <div class="grid">
+            <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSeqhZNlk-fH4tunpmmyuN_HgQ_s_obbZVKA&s" alt="Movie"></div>
+            <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvKX_00EtJuG2GAF87iUrSn_PgTT3ErL-gSQ&s" alt="Movie"></div>
+            <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwdrow6R08WWiO9YnwavpK01sJGJMP3j0UgQ&s" alt="Movie"></div>
+            <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWc34kgTih5UmCV5CMcJKI0ovQYottWk-k0w&s" alt="Movie"></div>
+            <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo6NP-J4DCI0wo9TMH5LFEPy2Vwo0Nainkog&s" alt="Movie"></div>
+            <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQADxUng2SNYAj7VDJ9AR6NDViJCnKk1RiuAw&s" alt="Movie"></div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>© 2024 Netflix, Inc.</p>
+    </footer>
+</body>
+</html>
